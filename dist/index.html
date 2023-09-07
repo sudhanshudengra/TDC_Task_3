@@ -64,8 +64,36 @@
                 </ul>
               </div>
               
-              <button class="inline-flex items-center bg-orange-200 border-0 py-1 px-3 focus:outline-none hover:bg-green-400 rounded text-base mt-4 md:mt-0 md:mx-2 font-bold ">Login
-                <button class="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-lime-400 rounded text-base mt-4 md:mt-0 md:mx-2 font-bold">Sign-Up
+              <div class="dropdown  relative">
+                <button class="inline-flex items-center bg-orange-200 border-0 py-1 px-3 focus:outline-none hover:bg-green-400 rounded text-base mt-4 md:mt-0 md:mx-2 font-bold ">
+                    <span class="mr-1">Login</span>
+                   </button>
+                   <form class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50 action="" id="form">
+                    <p><input type="text" placeholder="username"/></p>
+                    <p><input type="password" placeholder="password" /></p>
+                    <a href="#">
+                    <button type="submit" class="bg-green-600 text-white">Login</button>
+                    <button type="button" class="bg-red-600 text-white md:left-12" onclick="closeForm()">Close</button>
+                    </a>
+                  </form>
+              </div>
+
+
+              <div class="dropdown  relative">
+                <button class="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-lime-400 rounded text-base mt-4 md:mt-0 md:mx-2 font-bold">
+                    <span class="mr-1">Sign Up</span>
+                   </button>
+                   <form class="dropdown-menu absolute hidden text-gray-700 pt-1 z-50 action="" id="form">
+                    <p><input type="text" placeholder="username"/></p>
+                    <p><input type="password" placeholder="password" /></p>
+                    <a href="#">
+                    <button type="submit" class="bg-blue-600 text-white">SignUp</button>
+                    <button type="button" class="bg-red-600 text-white md:left-12" onclick="closeForm()">Close</button>
+                    </a>
+                  </form>
+              </div>
+              <!-- <button class="inline-flex items-center bg-orange-200 border-0 py-1 px-3 focus:outline-none hover:bg-green-400 rounded text-base mt-4 md:mt-0 md:mx-2 font-bold ">Login -->
+                <!-- <button class="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-lime-400 rounded text-base mt-4 md:mt-0 md:mx-2 font-bold">Sign-Up -->
             </div>
 
           
