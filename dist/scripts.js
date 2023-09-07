@@ -15,32 +15,38 @@ const data = [
         "id": 3, 
         "name": "Samsung Galaxy S23 Ultra",
         "price": 1099,
+        "link": "https://www.samsung.com/in/smartphones/galaxy-s/galaxy-s23-ultra-5g-phantom-black-256gb-sm-g930fzkgins/",
 
     },
     {
         "id": 4,
         "name": "Samsung Galaxy S21",
         "price": 899,
+        "link": "https://www.samsung.com/in/smartphones/galaxy-s/galaxy-s21-5g/",
     },
     {
         "id": 5,
         "name": "Samsung Galaxy S22 Ultra",
         "price": 1199,
+        "link": "https://www.samsung.com/in/smartphones/galaxy-s/galaxy-s22-ultra-5g-phantom-black-256gb-sm-g930fzkgins/",
     },
     {
         "id": 6,
         "name": "Motorola Moto G100",
         "price": 699,
+        "link": "https://www.motorola.com/us/smartphones-moto-g100/p",
     },
     {
         "id": 7,
         "name": "Redmi Note 10 Pro",
         "price": 499,
+        "link": "https://www.mi.com/global/redmi-note-10-pro/",
     },
     {
         "id": 8,    
         "name": "Realme 8",
         "price": 399,
+        "link": "https://www.realme.com/in/realme-8",
     },
 ]
 
@@ -65,15 +71,17 @@ const displayUsers = async () => {
         }
     }).map((object) => {
         const {name, price, link} = object;
-        return `<div class="container">
+        return `<div class="abc">
                 <style>
-                    div:hover{
-                        <a href=${link}></a>;
+                    .abc:hover{
+                        opacity: 0.7;
+                        cursor: pointer;
                     }
                 </style>
+                <a href = ${link} target="_blank">
                     <h5>${name}</h5>
                     <h5>Price= ${price}$</h5>
-                <a href=${link}></a>
+                    </a>
        
                 </div>
                 <hr>
